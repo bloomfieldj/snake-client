@@ -14,12 +14,13 @@ const connect = function () {
   conn.on("connect", () => {
     // code that does something when the connection is first established
     console.log("Welcome! to the den of snakes!");
-    conn.write('Name: Kha')
+    conn.write('Name: Kha');
   });
+
   
   return conn;
 
 
 };
 
-module.exports = connect;
+module.exports = { connect };
